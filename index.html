@@ -197,13 +197,37 @@
         </div>
       </div>
     </section>
-   
+
+    <!-- Counter section -->
+      <section class="counter-section py-5 bg-white position-relative z-2">
+        <div class="container">
+          <div class="row g-3 text-center counter-inner">
+            <div class="col-sm-6 col-lg-3 d-flex flex-column align-items-center z-1">
+              <p class="display-3 mb-0 text-n700"><span id="odometer1" class="odometer" data-count="25"></span>+</p>
+              <span>Years of Experiences</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 d-flex flex-column align-items-center z-1">
+              <p class="display-3 mb-0 text-n700"><span id="odometer2" class="odometer" data-count="150"></span>+</p>
+              <span>Unique Services</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 d-flex flex-column align-items-center z-1">
+              <p class="display-3 mb-0 text-n700"><span id="odometer3" data-count="50" class="odometer"></span>+</p>
+              <span>Expert Stylists</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 d-flex flex-column align-items-center z-1">
+              <p class="display-3 mb-0 text-n700"><span id="odometer4" data-count="10" class="odometer"></span>k+</p>
+              <span>Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- why choose section start -->
    <section class="whychoose bg4 home-6">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 offset-lg-2 offset-xl-3 col-xl-9 position-relative">
+            
             <div class="reveal reveal--right">
               <div class="whychoose-card white">
                 <h4 class="sub-heading fade_up_anim">Why Choose Best Look Salon?</h4>
@@ -823,45 +847,53 @@
       </div>
       <div class="col-lg-7 col-xl-8 px-0">
         <div class="reserve-form">
-          <h4 class="sub-heading fade_up_anim">Reserve Your Glow</h4>
-          <h3 class="mb-4 pb-xl-3">Book Your Visit</h3>
-          <div class="row g-3 g-xl-4 mb-4 pb-xl-3">
-            <div class="col-sm-6 col-xl-4">
-              <label for="name" class="d-block mb-3">Name</label>
-              <input class="salonix-input" name="user_name" type="text" id="name" placeholder="Enter Your Name..." required />
-            </div>
-            <div class="col-sm-6 col-xl-4">
-              <label for="email" class="d-block mb-3">Email</label>
-              <input class="salonix-input" name="email" type="email" id="email" placeholder="Enter Your Email..." required />
-            </div>
-            <div class="col-sm-6 col-xl-4">
-              <label for="Phone" class="d-block mb-3">Phone</label>
-              <input class="salonix-input" name="user_name" type="number" id="Phone" placeholder="Enter Your Phone..." required />
-            </div>
-            <div class="col-sm-6 col-xl-4">
-              <label for="service" class="d-block mb-3">Service</label>
-              <select name="service" class="sort" id="service">
-                <option value="">Select Service</option>
-                <option value="hair_cutting">Hair Cutting</option>
-                <option value="spa">Spa</option>
-                <option value="hair_styling">Hair Styling</option>
-                <option value="makeup">Makeup</option>
-                <option value="massage">Massage</option>
-                <option value="threading">Threading</option>
-                <option value="nail_art">Nail Art</option>
-              </select>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-              <label for="date" class="d-block mb-3">Date</label>
-              <input class="salonix-input" name="date" type="date" id="Date" required />
-            </div>
-            <div class="col-sm-6 col-xl-4">
-              <label for="Time" class="d-block mb-3">Time</label>
-              <input class="salonix-input" name="user_name" type="time" id="Time" required />
-            </div>
-          </div>
-          <a href="services.html" class="primary-btn">Book Now</a>
-        </div>
+  <h4 class="sub-heading fade_up_anim">Reserve Your Glow</h4>
+  <h3 class="mb-4 pb-xl-3">Book Your Home Visit</h3>
+  <p class="mb-4 text-muted">Professional beauty care, now at your doorstep. Book a home visit and enjoy expert treatments without leaving your space.</p>
+
+  <div class="row g-3 g-xl-4 mb-4 pb-xl-3">
+    <div class="col-sm-6 col-xl-4">
+      <label for="name" class="d-block mb-3">Name</label>
+      <input class="salonix-input" name="user_name" type="text" id="name" placeholder="Enter Your Name..." required />
+    </div>
+    <div class="col-sm-6 col-xl-4">
+      <label for="email" class="d-block mb-3">Email</label>
+      <input class="salonix-input" name="email" type="email" id="email" placeholder="Enter Your Email..." required />
+    </div>
+    <div class="col-sm-6 col-xl-4">
+      <label for="Phone" class="d-block mb-3">Phone</label>
+      <input class="salonix-input" name="phone" type="number" id="Phone" placeholder="Enter Your Phone..." required />
+    </div>
+    <div class="col-sm-6 col-xl-4">
+      <label for="service" class="d-block mb-3">Service</label>
+      <select name="service" class="sort" id="service">
+        <option value="">Select Service</option>
+        <option value="hair_cutting">Hair Cutting</option>
+        <option value="spa">Spa</option>
+        <option value="hair_styling">Hair Styling</option>
+        <option value="makeup">Makeup</option>
+        <option value="massage">Massage</option>
+        <option value="threading">Threading</option>
+        <option value="nail_art">Nail Art</option>
+      </select>
+    </div>
+    <div class="col-sm-6 col-xl-4">
+      <label for="date" class="d-block mb-3">Date</label>
+      <input class="salonix-input" name="date" type="date" id="Date" required />
+    </div>
+    <div class="col-sm-6 col-xl-4">
+      <label for="Time" class="d-block mb-3">Time</label>
+      <input class="salonix-input" name="time" type="time" id="Time" required />
+    </div>
+    <div class="col-12">
+      <label for="address" class="d-block mb-3">Address</label>
+      <input class="salonix-input" name="address" type="text" id="address" placeholder="Enter Your Full Address..." required />
+    </div>
+  </div>
+
+  <a href="services.html" class="primary-btn">Book Now</a>
+</div>
+
       </div>
     </div>
   </div>
@@ -953,7 +985,7 @@
         <p>Copyright © <a href="#" class="text-secondary fw-semibold">BestLook</a> All rights reserved.</p>
         <p class="mb-0">
           Developed by 
-          <a href="https://calicutwebdesigners.com" class="text-decoration-underline text-secondary fw-medium" style="transition: all 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Technoveda</a>
+          <a href="https://calicutwebdesigners.com" class="text-decoration-underline text-secondary fw-medium" style="transition: all 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">calicutwebdesigners</a>
         </p>
       </div>
     </div>
