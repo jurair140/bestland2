@@ -1,69 +1,109 @@
-/* Ensure pricing card text is visible */
-.pricing-card {
-  visibility: visible !important;
-  opacity: 1 !important;
-  background-color: #fff !important; /* White background for contrast */
-  min-width: 340px; /* Slightly increased for more space */
-  padding: 24px; /* Consistent padding */
-}
+ <section class="page-banner" style="background-image: url(assets/images/contact-us-hero-bg.webp)">
+      <span class="line"></span>
+      <span class="line two"></span>
+      <span class="line three"></span>
+      <span class="line four"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-xxl-7 col-3xl-6 z-2 banner-content px-3">
+            <h2 class="display-4 text-white mb-3 fade_up_anim">Contact Us</h2>
+            <p class="text-white">We’re Just a Message Away from Your Perfect Look.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* Use grid layout for pricing-item to keep elements aligned */
-.pricing-item {
-  display: grid;
-  grid-template-columns: 1fr auto auto; /* Service name takes most space, dashed lines and price fixed */
-  align-items: center; /* Center items vertically */
-  width: 100%;
-  overflow: visible; /* Prevent text clipping */
-  gap: 8px; /* Spacing between columns */
-}
+    <!-- banner ends -->
 
-/* Ensure service name text wraps within its column */
-.pricing-item p.m-text {
-  color: #404a60 !important; /* Dark gray for visibility */
-  min-width: 140px; /* Minimum width for service names */
-  white-space: normal; /* Allow text to wrap */
-  overflow: visible; /* Ensure no clipping */
-  text-overflow: clip; /* Disable ellipsis */
-  line-height: 1.4; /* Improve readability */
-}
+        <!-- Contact Us -->
+        <section class="contact-page pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="contact-form reveal reveal--top">
+                <div class="contact-title">
+                    <h4 class="sub-heading fade_up_anim">Get in Touch</h4>
+                    <h2 class="fade_up_anim text-uppercase">Book Your Beauty Experience Today</h2>
+                    <p class="mb-3 pb-lg-3 fade_up_anim" data-delay=".3">Our team is here to help you book your next appointment or answer any questions about our premium beauty services. Fill out the form, and we’ll get back to you soon!</p>
+                </div>
+                <form id="contact-form">
+                    <div class="row g-3 g-lg-4">
+                    <div class="col-md-6">
+                        <label for="name">Name</label>
+                        <input name="user_name" type="text" id="name" placeholder="Enter Your Full Name..." required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email</label>
+                        <input name="user_email" type="email" id="email" placeholder="Enter Your Email Address..." required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone">Phone</label>
+                        <input name="contact_number" type="tel" id="phone" placeholder="Enter Your Phone Number..." required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="country">Country</label>
+                        <select name="user_country" id="country" class="n0" required>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="ireland">Ireland</option>
+                        <option value="france">France</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Let us know your preferred services or appointment details..." name="message" id="message" class="w-100" rows="5" required></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center pt-lg-3">
+                        <button type="submit" class="primary-btn" id="submit-btn">Contact Us <i class="ph ph-arrow-up-right"></i></button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
 
-/* Style dashed lines */
-.pricing-item .dash-lines {
-  min-width: 20px;
-  max-width: 60px; /* Limit width */
-  height: 1px;
-  background: repeating-linear-gradient(to right, #798090 0, #798090 2px, transparent 2px, transparent 4px);
-}
-
-/* Ensure price text is aligned and visible */
-.pricing-item p.m-text.text-secondary {
-  color: #798090 !important; /* Light gray for prices */
-  min-width: 70px; /* Fixed width for prices */
-  text-align: right; /* Align prices to right */
-}
-
-/* Override animation styles */
-.pricing-card.reveal,
-.pricing-card .reveal,
-.pricing-card .title-anim {
-  visibility: visible !important;
-  top: 0 !important;
-  transform: none !important;
-}
-
-/* Adjust grid for smaller screens */
-@media (max-width: 767px) {
-  .pricing .col-md-6 {
-    flex: 0 0 100%; /* Full width on small screens */
-    max-width: 100%;
-  }
-  .pricing-card {
-    min-width: 100%; /* Full width for cards */
-  }
-  .pricing-item {
-    grid-template-columns: 1fr auto auto; /* Maintain layout */
-  }
-  .pricing-item p.m-text {
-    min-width: 100px; /* Adjust for smaller screens */
-  }
-}
+        <!-- Need More Help -->
+        <section class="more-help">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+            <div class="col-lg-8 col-xl-6">
+                <h4 class="sub-heading fade_up_anim">We’re Here for You</h4>
+                <h2 class="fade_up_anim text-uppercase">Need Assistance?</h2>
+                <p class="fade_up_anim" data-delay=".3">Have questions about our beauty services or need help booking an appointment? Contact us anytime, and our team will be delighted to assist you!</p>
+            </div>
+            </div>
+            <div class="row justify-content-center g-3 g-xl-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card fade_up_anim">
+                <i class="ph ph-phone-call"></i>
+                <h4 class="mb-3">Call Now</h4>
+                <div class="d-flex flex-column gap-1">
+                    <a href="tel:+447300505288">07300 505288</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card fade_up_anim" data-delay=".2">
+                <i class="ph ph-envelope-open"></i>
+                <h4 class="mb-3">Email Address</h4>
+                <div class="d-flex flex-column gap-1">
+                    <a href="mailto:info@yourlondonsalon.com">info@bestlook.com</a>
+                    <!-- <a href="mailto:bookings@yourlondonsalon.com">bookings@yourlondonsalon.com</a> -->
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card fade_up_anim" data-delay=".4">
+                <i class="ph ph-map-pin"></i>
+                <h4 class="mb-3">Visit Us</h4>
+                <div class="d-flex flex-column gap-1">
+                    <span>67 Strathmartine Rd, Dundee DD3 7RX</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
