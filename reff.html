@@ -1,78 +1,69 @@
- <section class="gallery pt-120 pb-120 position-relative">
-      <div class="container-big">
-        <div class="section-title">
-          <h4 class="sub-heading fade_up_anim">Masterpieces of Beauty</h4>
-          <h2 class="mb-2 mb-xl-3 fade_up_anim text-uppercase">Every Look, a Work of Art</h2>
-          <p class="fade_up_anim" data-delay=".3">Welcome to the BestLook Gallery, where beauty and creativity come alive. Each image represents our dedication to crafting stunning styles</p>
-        </div>
-        <div class="row g-2 g-lg-3 g-xxl-4">
-          <div class="col-md-3">
-            <a href="assets/images/nail-3.webp.webp" class="project-card glightbox">
-              <img src="assets/images/nail-3.webp" class="h-100" alt="" />
-              <div class="info d-flex justify-content-center align-items-center">
-                <div class="d-flex justify-content-end">
-                  <div class="plus-icon">
-                    <i class="ph ph-plus"></i>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-9">
-            <div class="row g-2 g-lg-3 g-xxl-4">
-              <div class="col-8">
-                <a href="assets/images/project-showcase-10.jpg" class="project-card glightbox">
-                  <img src="assets/images/project-showcase-10.jpg" alt="" />
-                  <div class="info d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-end">
-                      <div class="plus-icon">
-                        <i class="ph ph-plus"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="assets/images/nail-5.webp" class="project-card glightbox">
-                  <img src="assets/images/nail-5.webp" alt="" />
-                  <div class="info d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-end">
-                      <div class="plus-icon">
-                        <i class="ph ph-plus"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="assets/images/nail-4.webp" class="project-card glightbox">
-                  <img src="assets/images/nail-4.webp" alt="" />
-                  <div class="info d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-end">
-                      <div class="plus-icon">
-                        <i class="ph ph-plus"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-8">
-                <a href="assets/images/project-showcase-13.jpg" class="project-card glightbox">
-                  <img src="assets/images/project-showcase-13.jpg" alt="" />
-                  <div class="info d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-end">
-                      <div class="plus-icon">
-                        <i class="ph ph-plus"></i>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex justify-content-center mt-4 pt-xl-3">
-          <a href="#" class="outline-btn secondary playFairFont">see all images <i class="ph ph-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
+/* Ensure pricing card text is visible */
+.pricing-card {
+  visibility: visible !important;
+  opacity: 1 !important;
+  background-color: #fff !important; /* White background for contrast */
+  min-width: 340px; /* Slightly increased for more space */
+  padding: 24px; /* Consistent padding */
+}
+
+/* Use grid layout for pricing-item to keep elements aligned */
+.pricing-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* Service name takes most space, dashed lines and price fixed */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  overflow: visible; /* Prevent text clipping */
+  gap: 8px; /* Spacing between columns */
+}
+
+/* Ensure service name text wraps within its column */
+.pricing-item p.m-text {
+  color: #404a60 !important; /* Dark gray for visibility */
+  min-width: 140px; /* Minimum width for service names */
+  white-space: normal; /* Allow text to wrap */
+  overflow: visible; /* Ensure no clipping */
+  text-overflow: clip; /* Disable ellipsis */
+  line-height: 1.4; /* Improve readability */
+}
+
+/* Style dashed lines */
+.pricing-item .dash-lines {
+  min-width: 20px;
+  max-width: 60px; /* Limit width */
+  height: 1px;
+  background: repeating-linear-gradient(to right, #798090 0, #798090 2px, transparent 2px, transparent 4px);
+}
+
+/* Ensure price text is aligned and visible */
+.pricing-item p.m-text.text-secondary {
+  color: #798090 !important; /* Light gray for prices */
+  min-width: 70px; /* Fixed width for prices */
+  text-align: right; /* Align prices to right */
+}
+
+/* Override animation styles */
+.pricing-card.reveal,
+.pricing-card .reveal,
+.pricing-card .title-anim {
+  visibility: visible !important;
+  top: 0 !important;
+  transform: none !important;
+}
+
+/* Adjust grid for smaller screens */
+@media (max-width: 767px) {
+  .pricing .col-md-6 {
+    flex: 0 0 100%; /* Full width on small screens */
+    max-width: 100%;
+  }
+  .pricing-card {
+    min-width: 100%; /* Full width for cards */
+  }
+  .pricing-item {
+    grid-template-columns: 1fr auto auto; /* Maintain layout */
+  }
+  .pricing-item p.m-text {
+    min-width: 100px; /* Adjust for smaller screens */
+  }
+}
