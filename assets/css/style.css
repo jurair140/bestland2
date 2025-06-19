@@ -13844,183 +13844,7 @@ textarea.form-control-lg {
 
 
 
-.pricing {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
 
-.section-title {
-    max-width: 636px;
-    margin: 0 auto 40px;
-    text-align: center;
-}
-
-.section-title h4 {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 10px;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.section-title p {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-.pricing-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    height: 450px; /* Fixed height for consistency */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-}
-
-.pricing-card h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.pricing-card p {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 15px;
-}
-
-.pricing-card .pricing-content {
-    flex: 1;
-    overflow-y: auto;
-    margin-bottom: 15px;
-    padding-right: 10px;
-}
-
-.pricing-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.pricing-item p.m-text {
-    font-size: 0.85rem;
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-right: 10px;
-}
-
-.pricing-item .dash-lines {
-    flex-grow: 1;
-    border-bottom: 1px dashed #dee2e6;
-    margin: 0 10px;
-}
-
-.pricing-item p.text-secondary {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #6c757d !important;
-    text-transform: uppercase;
-    min-width: 80px;
-    text-align: right;
-}
-
-.pricing-card a {
-    font-size: 0.9rem;
-    color: #6c757d;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
-}
-
-.pricing-card a:hover {
-    color: #343a40;
-}
-
-
-/* Ensure pricing card text is visible */
-.pricing-card {
-  visibility: visible !important;
-  opacity: 1 !important;
-  background-color: #fff !important; /* White background for contrast */
-  min-width: 340px; /* Slightly increased for more space */
-  padding: 24px; /* Consistent padding */
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
-}
-
-/* Hide scrollbars for pricing-content */
-.pricing-content {
-  max-height: 400px; /* Optional: Limit height to control scrolling */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-}
-
-/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
-.pricing-content::-webkit-scrollbar {
-  display: none;
-}
-
-/* Use grid layout for pricing-item to keep elements aligned */
-.pricing-item {
-  display: grid;
-  grid-template-columns: 1fr auto auto; /* Service name takes most space, dashed lines and price fixed */
-  align-items: center; /* Center items vertically */
-  width: 100%;
-  overflow: visible; /* Prevent text clipping */
-  gap: 8px; /* Spacing between columns */
-}
-
-/* Ensure service name text wraps within its column */
-.pricing-item p.m-text {
-  color: #404a60 !important; /* Dark gray for visibility */
-  min-width: 140px; /* Minimum width for service names */
-  white-space: normal; /* Allow text to wrap */
-  overflow: visible; /* Ensure no clipping */
-  text-overflow: clip; /* Disable ellipsis */
-  line-height: 1.4; /* Improve readability */
-}
-
-/* Style dashed lines */
-.pricing-item .dash-lines {
-  min-width: 20px;
-  max-width: 60px; /* Limit width */
-  height: 1px;
-  background: repeating-linear-gradient(to right, #798090 0, #798090 2px, transparent 2px, transparent 4px);
-}
-
-/* Ensure price text is aligned and visible */
-.pricing-item p.m-text.text-secondary {
-  color: #798090 !important; /* Light gray for prices */
-  min-width: 70px; /* Fixed width for prices */
-  text-align: right; /* Align prices to right */
-}
-
-/* Override animation styles */
-.pricing-card.reveal,
-.pricing-card .reveal,
-.pricing-card .title-anim {
-  visibility: visible !important;
-  top: 0 !important;
-  transform: none !important;
-}
 
 
   /* <!--  CSS for Dropdown   book now page--> */
@@ -14182,8 +14006,87 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 
+/* indivitual pricing */
 
 
+
+.pricing-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.pricing-card .pricing-content {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.pricing-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pricing-item p.m-text {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+.pricing-item .dash-lines {
+    flex-grow: 1;
+    border-bottom: 1px dashed #dee2e6;
+    margin: 0 10px;
+}
+
+.pricing-item p.text-secondary {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6c757d !important;
+    text-transform: uppercase;
+    min-width: 80px;
+    text-align: right;
+}
+
+.pricing-card a {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.pricing-card a:hover {
+    color: #343a40;
+}
 
 @media (max-width: 768px) {
     .pricing-card {
@@ -14200,6 +14103,9 @@ input.error, textarea.error, .dropdown-toggle.error {
         min-width: 70px;
     }
 }
+
+
+
 
 
 

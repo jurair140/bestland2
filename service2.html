@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
   <link href="assets/css/style.css" rel="stylesheet"></head>
 
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
   <body>
     <!-- Loader -->
     <div class="loader-container">
@@ -67,7 +69,7 @@
               <a class="d-flex align-items-center" href="index.html">Home</a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="about-us.html">About Us</a>
+              <a class="d-flex align-items-center" href="about.html">About Us</a>
             </li>
             <li>
               <a class="d-flex align-items-center" href="service.html">Services</a>
@@ -95,105 +97,170 @@
     </header>
 
 
-        <!-- Banner section -->
+       
 
-      <section class="about-banner space-header mb-5">
-            <span class="line"></span>
-            <span class="line two"></span>
-            <span class="line three"></span>
-            <span class="line four"></span>
-            <div class="container position-relative">
-                <div class="row">
-                <div class="col-12 z-2 banner-content">
-                    <h2 class="display-4 text-white mb-3 fade_up_anim">About Us</h2>
-                    <p class="text-white">Not just services an experience of self-love</p>
-                </div>
-                </div>
-            </div>
-      </section>
 
-          <!-- About section start -->
-       <section id="about" class="about mt-5">
-            <h2 class="vertical dmSansFont">About us</h2>
-            <div class="counter-wrapper position-relative z-3">
-                
-            </div>
-           <div class="about-inner">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-lg-6">
-                        <img src="assets/images/about-1.webp" class="about-img" alt="About Us Image" />
-                    </div>
-                    <div class="col-lg-6 z-2 position-relative">
-                        <div class="line"></div>
-                        <div class="line two"></div>
-                        <div class="line three"></div>
-                        <div class="about-content">
-                        <h4 class="sub-heading fade_up_anim">Elegance Crafted With Care</h4>
-                        <h2 class="fade_up_anim fw-semibold mb-3">Defining Beauty. Redefining Confidence.</h2>
-                        <p class="pb-lg-3 mb-3 fade_up_anim" data-delay=".3">
-                            At BEST LOOK beauty saloon, beauty is more than appearance—it’s a celebration of individuality. Every visit is a step into a space where luxury meets comfort, and style meets self-expression. We’re committed to delivering more than services — we offer a full experience of care, creativity, and transformation.
+
+    <!-- Service details start -->
+        <section class="service-details pt-80 pb-80 mt-5">
+            <div class="container">
+                <div class="row g-3 g-xl-4 position-relative">
+                <div class="col-lg-8">
+                    <div class="details-left">
+
+                    <div class="details-content pt-3 mt-xl-4">
+                        <h2>Face Waxing</h2>
+                        <p>
+                        Face waxing offers a smooth and long-lasting solution for removing unwanted facial hair. It helps achieve a polished and flawless look by gently lifting hair from the roots, ensuring a soft and radiant complexion. Ideal for those looking for an alternative to threading or shaving, our face waxing services are performed by skilled professionals ensuring minimal discomfort.
                         </p>
-                        <ul class="team-feature">
-                            <li><i class="ph ph-check-circle"></i> <span>Tailored Beauty Solutions for Every Client</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span>Effortless Booking & On-Time Appointments</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span>Highly Skilled & Certified Professionals</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span>Use of Premium & Safe Products Only</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span>Post-Service Care Guidance & Support</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span>Trusted by Hundreds of Happy Clients</span></li>
+                        <h3>Details:</h3>
+                        <ul>
+                        <li>Service Type: Gentle facial hair removal using high-quality wax suitable for sensitive skin.</li>
+                        <li>Options Available: Eyebrows, lips, chin, forehead, side face, neck, nose, ears, and full face waxing packages.</li>
+                        <li>Technique: Safe and hygienic waxing procedures for smooth, hair-free skin.</li>
+                        <li>Location: Easily accessible salon with modern equipment and certified beauty specialists.</li>
+                        <li>Service Duration: Ranges from 5 to 35 minutes depending on the service area.</li>
+                        <li>Cost: Competitive pricing starting at £4.99, with full face packages also available.</li>
                         </ul>
+                        <div class="row g-3 align-items-center">
+                        <div class="col-md-7">
+                            <h4>Service Highlights:</h4>
+                            <p>
+                            Long-Lasting Results: Enjoy hair-free skin for weeks with minimal regrowth. <br />
+                            Skin-Friendly: Uses premium wax suitable for all skin types to reduce irritation.
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="reveal reveal--right reveal--overlay overflow-hidden">
+                            <img src="assets/images/service2.jpg" class=" img-fluid" alt="Face Waxing" />
+                            </div>
+                        </div>
+                        </div>
+                        <h5 class="mt-3">More Details</h5>
+                        <p>
+                        Comprehensive Services: From individual areas to complete face packages tailored to your needs. <br /><br />
+                        Expert Care: Delivered by trained professionals in a clean, comfortable environment.
+                        </p>
+                        <h6>Benefits to the Client:</h6>
+                        <p class="mb-4">
+                        Smooth & Radiant: Achieve a fresh, glowing look instantly. <br />
+                        Quick & Painless: Designed for maximum comfort and efficiency. <br /><br />
+                        Value for Money: Premium care at affordable prices.
+                        </p>
+
+                        <!-- Face Waxing Pricing Without Time -->
+                        <div>
+                        <div class="pricing-card">
+                            <div class="pricing-content">
+                            <div class="pricing-item">
+                                <p class="m-text">Eyebrow Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£9.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Upper Lip Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£5.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Lower Lip Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£5.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Chin Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£5.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Ears Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£4.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Middle of Brow Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£4.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Neck Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£9.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Nose Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£9.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Forehead Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£6.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Side Face Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£15.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Full Face (Excluding Eyebrow) Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£29.99</p>
+                            </div>
+                            <div class="pricing-item">
+                                <p class="m-text">Full Face (Including Eyebrow) Waxing</p>
+                                <span class="dash-lines"></span>
+                                <p class="m-text text-secondary">£34.99</p>
+                            </div>
+                            </div>
+                            <a href="booknow.html" class="playFairFont">Book now</a>
+                        </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 position-sticky">
+                    <div class="bg4-box">
+                    <div class="price-list mb-2">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                        <p class="text-n500">Opening Hour :</p>
+                        <span class="fw-medium">09:30 AM - 20:30 PM</span>
                         </div>
                     </div>
+                    <a href="booknow.html" class="buy-now d-flex justify-content-center w-100 mt-4 text-uppercase playFairFont">Book Now</a>
+                    </div>
+                    <div class="bg4-box">
+                    <h4 class="bb-dashed-24">Services</h4>
+                    <ul class="category-list">
+                        <li><a href="service1.html"><span>Face Threading</span></a></li>
+                        <li><a href="service2.html"><span>Face Waxing</span></a></li>
+                        <li><a href="service3.html"><span>Body Waxing</span></a></li>
+                        <li><a href="service4.html"><span>Makeup</span></a></li>
+                        <li><a href="service5.html"><span>Makeup Add-ons</span></a></li>
+                        <li><a href="service6.html"><span>Facials</span></a></li>
+                        <li><a href="service7.html"><span>Eyelash Services</span></a></li>
+                        <li><a href="service8.html"><span>Brows &amp; Tinting</span></a></li>
+                        <li><a href="service9.html"><span>Henna Tattoo</span></a></li>
+                        <li><a href="service10.html"><span>Massage</span></a></li>
+                        <li><a href="service11.html"><span>Hair &amp; Styling</span></a></li>
+                        <li><a href="service12.html"><span>Nails Polish &amp; Pamper</span></a></li>
+                        <li><a href="service13.html"><span>Nails Extensions</span></a></li>
+                        <li><a href="service14.html"><span>Child Treatments</span></a></li>
+                        <li><a href="service15.html"><span>Patch Tests</span></a></li>
+                    </ul>
                     </div>
                 </div>
-             </div>
 
-      </section>
-
-
-
-       <!-- why choose section start -->
-    <section class="whychoose">
-        <div class="side-text d-none d-xl-flex flex-column align-items-center gap-5">
-            <h2 class="vertical dmSansFont">why choose</h2>
-        </div>
-        <div class="line"></div>
-        <div class="container">
-            <div class="row">
-            <div class="col-lg-10 col-xl-9 position-relative">
-                <div class="reveal reveal--right">
-                <div class="whychoose-card">
-                    <h4 class="sub-heading fade_up_anim">Why Choose Best Look?</h4>
-                    <h2 class="pb-1 fade_up_anim text-uppercase">Elevating Beauty, Right at Your Doorstep</h2>
-                    <p class="mb-4 fade_up_anim" data-delay=".3">
-                    At <strong>Best Look</strong>, we redefine salon experiences with expert care and personalized service—whether you're in our studio or relaxing at home. With professional stylists, trusted products, and the convenience of doorstep service, we make luxury beauty accessible and effortless.
-                    </p>
-                    <ul class="why-list fade_up_anim ps-3" data-delay=".6" style="list-style-type: disc;">
-                    <li>Certified Stylists with Passion & Precision</li>
-                    <li>Premium & Skin-Safe Products</li>
-                    <li>Doorstep Salon Services Across the City</li>
-                    <li>Clean, Hygienic & Relaxing Environment</li>
-                    <li>Personalized Beauty Plans for Every Client</li>
-                    <li>Flexible Booking & On-Time Appointments</li>
-                    <li>100% Client Satisfaction Guarantee</li>
-                    </ul>
-                    <a class="primary-btn mt-3" href="service.html">Show Services <i class="ph ph-arrow-right"></i></a>
-                </div>
                 </div>
             </div>
-            <div class="d-none col-lg-2 col-xl-3 d-lg-block position-relative">
-                <div class="about-line-2"></div>
-                <div class="about-line-3"></div>
-            </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- why choose section end -->
-   
 
-   
-    
+
+       
+
 
     <!-- Footer -->
      <footer class="footer footer-two border-top-0 position-relative">
@@ -304,7 +371,19 @@
     <script src="assets/js/plugins/gsap.min.js"></script>
     <script src="assets/js/plugins/scrollTrigger.min.js"></script>
     <script src="assets/js/app.js"></script>
-  <script defer src="assets/js/index.js"></script></body>
+  <script defer src="assets/js/index.js"></script>
+
+
+ 
+
+
+</body>
 
 <!-- Mirrored from pixner.net/html/salonix/dist/services-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jun 2025 06:50:21 GMT -->
 </html>
+
+
+
+
+
+
