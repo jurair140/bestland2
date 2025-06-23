@@ -14089,15 +14089,8 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 
-.m-pricing{
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 20px;
-    margin-bottom: 0;
-}
+
+
 .btn-pricing {
     display: block;    /* Makes the <a> behave like a block element */
     width: 100%;      /* Full width of parent div */
@@ -14111,6 +14104,44 @@ input.error, textarea.error, .dropdown-toggle.error {
     padding: 10px 0;   /* Optional: makes it look like a button */
     text-decoration: none; /* Removes underline from link */
 }
+
+
+
+.m-pricing {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+/* Box style for price only */
+.m-pricing.price-box {
+    background-color: #be3784;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+/* Small screen tweaks */
+@media (max-width: 576px) {
+  .m-pricing {
+    font-size: 0.9rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .m-pricing.price-box {
+    font-size: 0.85rem;
+    padding: 3px 6px;
+  }
+}
+
+
 
 @media (max-width: 576px) {
   .m-pricing {
