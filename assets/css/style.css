@@ -14031,9 +14031,10 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-card p {
-    font-size: 0.9rem;
-    color: #6c757d;
+    font-size: 1.5rem;
+    color: black;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .pricing-card .pricing-content {
@@ -14051,7 +14052,7 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-item p.m-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -14065,9 +14066,9 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-item p.text-secondary {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #6c757d !important;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black !important;
     text-transform: uppercase;
     min-width: 80px;
     text-align: right;
