@@ -14031,10 +14031,9 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-card p {
-    font-size: 1.5rem;
-    color: black;
+    font-size: 0.9rem;
+    color: #6c757d;
     margin-bottom: 15px;
-    font-weight: 600;
 }
 
 .pricing-card .pricing-content {
@@ -14052,7 +14051,7 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-item p.m-text {
-    font-size: 1rem;
+    font-size: 0.85rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -14066,9 +14065,9 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 
 .pricing-item p.text-secondary {
-    font-size: 1rem;
-    font-weight: 700;
-    color: black !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6c757d !important;
     text-transform: uppercase;
     min-width: 80px;
     text-align: right;
@@ -14088,6 +14087,46 @@ input.error, textarea.error, .dropdown-toggle.error {
 .pricing-card a:hover {
     color: #343a40;
 }
+
+
+.m-pricing{
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.btn-pricing {
+    display: block;    /* Makes the <a> behave like a block element */
+    width: 100%;      /* Full width of parent div */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #be3784;
+    border: lightblue;
+    cursor: pointer;
+    text-align: center; /* To center the text inside the link */
+    padding: 10px 0;   /* Optional: makes it look like a button */
+    text-decoration: none; /* Removes underline from link */
+}
+
+@media (max-width: 576px) {
+  .m-pricing {
+    font-size: 0.8rem;   /* Slightly smaller text */
+    margin-left: 10px;   /* Less margin for space saving */
+    white-space: normal; /* Allow wrapping on small screens */
+    overflow: visible;   /* No ellipsis cutting text */
+    text-overflow: clip; /* Remove ellipsis effect */
+  }
+
+  .btn-pricing {
+    font-size: 0.9rem;   /* Slightly smaller button text */
+    padding: 8px 0;      /* Slightly less vertical padding */
+  }
+}
+
 
 @media (max-width: 768px) {
     .pricing-card {
