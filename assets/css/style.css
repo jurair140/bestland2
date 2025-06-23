@@ -14122,7 +14122,7 @@ input.error, textarea.error, .dropdown-toggle.error {
   }
 
   .btn-pricing {
-    font-size: 0.9rem;   /* Slightly smaller button text */
+    font-size: 0.8rem;   /* Slightly smaller button text */
     padding: 8px 0;      /* Slightly less vertical padding */
   }
 }
