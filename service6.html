@@ -115,119 +115,249 @@
             <p>
               Experience our wide range of facial treatments designed to refresh, rejuvenate, and restore your skin's natural glow. From quick cleansing to luxurious anti-aging facials, our experts ensure your skin feels and looks its best.
             </p>
-            <h3>Details:</h3>
-            <ul>
-              <li>Service Type: Skin rejuvenation and care.</li>
-              <li>Options Available: Cleansing, Exfoliation, Polishing, Anti-aging, Brightening, Gold, Diamond Facials, and various Add-ons.</li>
-              <li>Technique: Professional application using premium skincare products tailored to your skin needs.</li>
-              <li>Location: In-salon services provided by certified aestheticians.</li>
-              <li>Service Duration: Ranges from 10 minutes for add-ons to 90 minutes for premium facials.</li>
-              <li>Cost: Starting from £6.99, ensuring accessibility for all budgets.</li>
-            </ul>
-            <div class="row g-3 align-items-center">
-              <div class="col-md-7">
-                <h4>Service Highlights:</h4>
-                <p>
-                  Professional Skin Care: Solutions for all skin types and concerns. <br />
-                  Visible Results: Improved texture, glow, and hydration from the first session.
-                </p>
-              </div>
-              <div class="col-md-5">
-                <div class="reveal reveal--right reveal--overlay overflow-hidden">
-                  <img src="assets/images/facial.jpg" class="w-100 img-fluid" alt="Facials" />
-                </div>
-              </div>
-            </div>
-            <h5 class="mt-3">More Details</h5>
-            <p>
-              Our facials are designed to target your specific skin needs, from daily care to special occasion glow-ups. <br /><br />
-              Add-ons available to enhance your experience and benefits.
-            </p>
-            <h6>Benefits to the Client:</h6>
-            <p class="mb-4">
-              Comprehensive Care: Covers cleansing, toning, exfoliating, and moisturizing.<br />
-              Anti-aging Options: Special treatments for mature skin.<br />
-              Affordable Luxury: Quality skincare at reasonable prices.
-            </p>
+            
+            <div class="accordion d-flex flex-column gap-3" id="accordionExample">
 
-            <!-- Facials Pricing Without Time -->
-            <div>
-              <div class="pricing-card">
-                <div class="pricing-content">
-                  <div class="pricing-item">
-                    <p class="m-text">Face Cleansing & Toner</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£11.99</p>
+                <!-- Face Cleansing & Toner -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Face Cleansing & Toner:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£11.99</p>
+                      </div>
+                    </button>
                   </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Face Exfoliation & Toner</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£11.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Face Polish & Toner</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£17.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Mini Facial (Cleanse, Polish & Toner)</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£19.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Express Facial (Cleanse, Exfoliate, Mask & Toner)</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£24.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Deluxe Facial</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£32.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Brightening / Anti-aging Facial</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£37.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Whitening / Gold Facial</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£49.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Diamond Facial</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£69.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Add-on Double Mask</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£9.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Add-on Lip Mask</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£6.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Add-on Eye Mask</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£6.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Add-on Serum</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£6.99</p>
-                  </div>
-                  <div class="pricing-item">
-                    <p class="m-text">Add-on Heat Treatment</p>
-                    <span class="dash-lines"></span>
-                    <p class="m-text text-secondary">£14.99</p>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
                   </div>
                 </div>
-                <a href="booknow.html" class="playFairFont">Book now</a>
-              </div>
+
+                <!-- Face Exfoliation & Toner -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Face Exfoliation & Toner:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£11.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Face Polish & Toner -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Face Polish & Toner:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£17.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Facial (Cleanse, Polish & Toner) -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Mini Facial (Cleanse, Polish & Toner):</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£19.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Express Facial (Cleanse, Exfoliate, Mask & Toner) -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Express Facial (Cleanse, Exfoliate, Mask & Toner):</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£24.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Deluxe Facial -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Deluxe Facial:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£32.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Brightening / Anti-aging Facial -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Brightening / Anti-aging Facial:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£37.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Whitening / Gold Facial -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Whitening / Gold Facial:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£49.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Diamond Facial -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Diamond Facial:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£69.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add-on Double Mask -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Add-on Double Mask:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£9.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add-on Lip Mask -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Add-on Lip Mask:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£6.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add-on Eye Mask -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Add-on Eye Mask:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£6.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add-on Serum -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Add-on Serum:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£6.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add-on Heat Treatment -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-pricing pt-2 mb-2">Add-on Heat Treatment:</p>
+                        <p class="m-pricing price-box pt-2 mb-2">£14.99</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="booknow.html" class="btn-pricing w-100">Book now</a>
+                    </div>
+                  </div>
+                </div>
+
             </div>
+           
 
           </div>
         </div>
