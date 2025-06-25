@@ -14130,6 +14130,16 @@ input.error, textarea.error, .dropdown-toggle.error {
 .img-loyalty-card{
   width: 60%;
 }
+
+.m-pricing-sub {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+
 @media (max-width: 576px){
   .img-loyalty-card{
     width: 100%;
