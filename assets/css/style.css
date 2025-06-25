@@ -14127,6 +14127,14 @@ input.error, textarea.error, .dropdown-toggle.error {
     margin-right: 30px;
 }
 
+.img-loyalty-card{
+  width: 60%;
+}
+@media (max-width: 576px){
+  .img-loyalty-card{
+    width: 100%;
+  }
+}
 /* Small screen tweaks */
 @media (max-width: 576px) {
   .m-pricing {
