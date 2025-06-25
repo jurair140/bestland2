@@ -102,8 +102,8 @@
           </button>
         </div>
 
-        <img src="assets/images/logo.png" class="w-50" alt="" />
-        <p class="text-white">Welcome to BestLook, where our team of experienced attorneys is dedicated to providing you with the best</p>
+        <img src="assets/images/logo-3.png" class="w-50" alt="" />
+        <p class="text-white">Welcome to BestLook, where our team of skilled professionals is committed to deliver top quality beauty and wellness services.</p>
         <h5 class="fw-semibold text-white">Gallery</h5>
         <div class="row g-3 gallery" id="gallery">
           <a href="assets/images/showcase-1.webp" class="col-4 glightbox">
@@ -137,7 +137,7 @@
             <a href="#"><i class="ph ph-instagram-logo"></i></a>
           </li>
           <li>
-            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph ph-tiktok-logo"></i></a>
           </li>
          
         </ul>
@@ -159,6 +159,21 @@
     <button class="back-to-top">
       <i class="ph ph-arrow-up"></i>
     </button>
+
+    <!-- Offer Popup Modal -->
+<div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-body">
+        <h5 class="mb-3">Special Offer 🎉</h5>
+        <img src="assets/images/offer-popup.png" class="img-fluid" alt="">
+        <!-- <p class="mb-4">We’re offering <strong>15% off</strong> on nails, lashes, and waxing. <br>Thank you!</p> -->
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">ok got it</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <!-- Banner section -->
     <section id="banner" class="banner-3 position-relative space-header overflow-hidden mb-5">
@@ -455,7 +470,7 @@
       <div class="col-lg-12 text-center">
         <h4 class="sub-heading fade_up_anim">Loyalty Scheme Available</h4>
         <h2 class="text-white fade_up_anim mb-4" data-delay=".2">Exclusive Rewards for Our Customers</h2>
-        <img src="assets/images/Loyalty.jpg" class="img-fluid" alt="Loyalty Card Available">
+        <img src="assets/images/Loyalty.jpg" class="w-75" alt="Loyalty Card Available">
       </div>
     </div>
   </div>
@@ -561,18 +576,18 @@
               <div class="col-xxl-8 col-xl-10 col-4xl-7 offset-xl-1">
                 <div class="faq-content bg-transparent">
                   <h4 class="sub-heading fade_up_anim">Your Beauty, Our Priority</h4>
-                  <h2 class="fade_up_anim">FAQs at BestLook</h2>
-                  <p class="pb-lg-2 mb-3 mb-xl-4 fade_up_anim" data-delay=".3">At BestLook, we want you to feel confident and comfortable with every visit. Here are answers to some of the most common questions our guests ask.</p>
+                  <h2 class="fade_up_anim">FAQs at Best Look</h2>
+                  <p class="pb-lg-2 mb-3 mb-xl-4 fade_up_anim" data-delay=".3">At Best Look, we want you to feel confident and comfortable with every visit. Here are answers to some of the most common questions our guests ask.</p>
                   <div class="accordion d-flex flex-column gap-3 gap-xxl-4" id="accordionExample">
                     <div class="accordion-item">
                       <div class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                          What services does BestLook offer?
+                          What services does Best Look offer?
                         </button>
                       </div>
                       <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <p>BestLook provides haircuts, styling, waxing, threading, lash lifts, facials, and more. Each service is designed to bring out your best look.</p>
+                          <p>Best Look provides haircuts, styling, waxing, threading, lash lifts, facials, and more. Each service is designed to bring out your best look.</p>
                         </div>
                       </div>
                     </div>
@@ -707,11 +722,11 @@
             <a href="#">
               <img src="assets/images/logo.png" class=" mb-4 w-75" alt="BestLook Logo" />
             </a>
-            <p class="mb-4 pb-lg-3 text-n500">BestLook is your destination for modern style and premium hair and beauty services. Where beauty meets precision and passion.</p>
+            <p class="mb-4 pb-lg-3 text-n500">Best Look is your destination for modern style and premium hair and beauty services. Where beauty meets precision and passion.</p>
             <ul class="social-link two">
               <li><a href="#"><i class="ph ph-facebook-logo"></i></a></li>
               <li><a href="#"><i class="ph ph-instagram-logo"></i></a></li>
-              <li><a href="#"><i class="ph ph-linkedin-logo"></i></a></li>
+              <li><a href="#"><i class="ph ph-tiktok-logo"></i></a></li>
               <li><a href="#"><i class="ph ph-twitter-logo"></i></a></li>
             </ul>
           </div>
@@ -756,8 +771,8 @@
                       <i class="ph ph-map-pin"></i>
                     </div>
                     <div class="d-flex flex-column gap-1 p-2">
-                      <p>67 Strathmartine Road, Dundee DD3 7RX</p>
-                      <p >Scotland, UK</p>
+                      <p>67 Strathmartine Road, Dundee, Scotland, UK</p>
+                      <p>DD3 7RX</p>
                     </div>
                   </li>
                 </ul>
@@ -803,6 +818,16 @@
     <script src="assets/js/plugins/scrollTrigger.min.js"></script>
     <script src="assets/js/app.js"></script>
   <script defer src="assets/js/index.js"></script></body>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+      const offerModal = new bootstrap.Modal(document.getElementById('offerModal'));
+      offerModal.show();
+    }, 2000); // Show after 2 seconds
+  });
+</script>
 
 <!-- Mirrored from pixner.net/html/salonix/dist/home-six.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jun 2025 06:49:47 GMT -->
 </html>
