@@ -13941,7 +13941,7 @@ input.error, textarea.error, .dropdown-toggle.error {
   line-height: 1.4;
 }
 .sub-item:hover {
-  background-color: #f5f6f7;
+  background-color: #c7bdbd;
 }
 .selected-tags {
   display: flex;
@@ -13992,7 +13992,7 @@ input.error, textarea.error, .dropdown-toggle.error {
   .dropdown-menu{
     width: auto;
   }
-  /* input.form-control, textarea.form-control, .dropdown-toggle {
+  input.form-control, textarea.form-control, .dropdown-toggle {
     font-size: 14px;
     padding: 8px 12px;
   }
@@ -14003,7 +14003,7 @@ input.error, textarea.error, .dropdown-toggle.error {
     height: 72px;
     min-height: 72px;
     max-height: 72px;
-  } */
+  }
 }
 
 
