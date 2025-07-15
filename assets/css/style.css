@@ -13984,14 +13984,15 @@ input.error, textarea.error, .dropdown-toggle.error {
 }
 @media (max-width: 767px) {
   .sub-menu {
-    left: 0;
+    /* left: 0;
     top: 100%;
-    width: 100%;
+    width: 100%; */
+    width: auto;
   }
   .dropdown-menu{
-    width: 75%;
+    width: auto;
   }
-  input.form-control, textarea.form-control, .dropdown-toggle {
+  /* input.form-control, textarea.form-control, .dropdown-toggle {
     font-size: 14px;
     padding: 8px 12px;
   }
@@ -14002,7 +14003,7 @@ input.error, textarea.error, .dropdown-toggle.error {
     height: 72px;
     min-height: 72px;
     max-height: 72px;
-  }
+  } */
 }
 
 
