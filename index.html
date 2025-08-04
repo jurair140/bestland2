@@ -16,7 +16,15 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/nice-select2.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-  <link href="assets/css/style.css" rel="stylesheet"></head>
+  <link href="assets/css/style.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+
+
+</head>
+
+
 
   <body>
     <!-- Loader -->
@@ -651,7 +659,7 @@
 
     <!-- Footer -->
     <footer class="footer footer-two border-top-0 position-relative" >
-  <div class="container reserve">
+<div class="container reserve position-relative" style="z-index: 100;">
     <div class="row">
       <div class="col-lg-5 col-xl-4 opening-hour bg2">
         <div class="py-3">
@@ -673,8 +681,8 @@
           <a href="https://www.google.com/maps" class="white-btn">Get direction <i class="ph ph-arrow-up-right"></i></a>
         </div>
       </div>
-      <div class="col-lg-7 col-xl-8 px-0">
-        <div class="reserve-form">
+      <div class="col-lg-7 col-xl-8 px-0" >
+        <div class="reserve-form" >
   <h4 class="sub-heading fade_up_anim">Reserve Your Glow</h4>
   <h3 class="mb-4 pb-xl-3">Book Your Home Visit</h3>
   <p class="mb-4 text-muted">Professional beauty care, now at your doorstep. Book a home visit and enjoy expert treatments without leaving your space.</p>
@@ -692,19 +700,7 @@
       <label for="Phone" class="d-block mb-3">Phone</label>
       <input class="salonix-input" name="phone" type="number" id="Phone" placeholder="Enter Your Phone..." required />
     </div>
-    <div class="col-sm-6 col-xl-4">
-      <label for="service" class="d-block mb-3">Service</label>
-      <select name="service" class="sort" id="service">
-        <option value="">Select Service</option>
-        <option value="hair_cutting">Hair Cutting</option>
-        <option value="spa">Spa</option>
-        <option value="hair_styling">Hair Styling</option>
-        <option value="makeup">Makeup</option>
-        <option value="massage">Massage</option>
-        <option value="threading">Threading</option>
-        <option value="nail_art">Nail Art</option>
-      </select>
-    </div>
+
     <div class="col-sm-6 col-xl-4">
       <label for="date" class="d-block mb-3">Date</label>
       <input class="salonix-input" name="date" type="date" id="Date" required />
@@ -717,6 +713,272 @@
       <label for="address" class="d-block mb-3">Address</label>
       <input class="salonix-input" name="address" type="text" id="address" placeholder="Enter Your Full Address..." required />
     </div>
+        <div class="col-12">
+                        <label for="services">Select Services</label>
+                        <div class="custom-dropdown">
+                        <div class="dropdown-toggle" id="services-toggle">Select Services...</div>
+                        <div class="dropdown-menu" id="services-menu">
+                            <div class="main-category" data-category="face-threading">Face Threading <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="face-threading">
+                            <div class="sub-item" data-value="face-threading-eyebrow">Eyebrow Threading</div>
+                            <div class="sub-item" data-value="face-threading-upper-lip">Upper Lip Threading</div>
+                            <div class="sub-item" data-value="face-threading-lower-lip">Lower Lip Threading</div>
+                            <div class="sub-item" data-value="face-threading-chin">Chin Threading</div>
+                            <div class="sub-item" data-value="face-threading-middle-brow">Middle of Brow Threading</div>
+                            <div class="sub-item" data-value="face-threading-neck">Neck Threading</div>
+                            <div class="sub-item" data-value="face-threading-nose">Nose Threading</div>
+                            <div class="sub-item" data-value="face-threading-forehead">Forehead Threading</div>
+                            <div class="sub-item" data-value="face-threading-side-face">Side Face Threading</div>
+                            <div class="sub-item" data-value="face-threading-full-face-excl-eyebrow">Full Face (Excluding Eyebrow) Threading</div>
+                            <div class="sub-item" data-value="face-threading-full-face-incl-eyebrow">Full Face (Including Eyebrow) Threading</div>
+                            </div>
+                            <div class="main-category" data-category="face-waxing">Face Waxing <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="face-waxing">
+                            <div class="sub-item" data-value="face-waxing-eyebrow">Eyebrow Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-upper-lip">Upper Lip Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-lower-lip">Lower Lip Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-chin">Chin Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-ears">Ears Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-middle-brow">Middle of Brow Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-neck">Neck Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-nose">Nose Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-forehead">Forehead Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-side-face">Side Face Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-full-face-excl-eyebrow">Full Face (Excluding Eyebrow) Waxing</div>
+                            <div class="sub-item" data-value="face-waxing-full-face-incl-eyebrow">Full Face (Including Eyebrow) Waxing</div>
+                            </div>
+                            <div class="main-category" data-category="body-waxing">Body Waxing <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="body-waxing">
+                            <div class="sub-item" data-value="body-waxing-fingers">Fingers Wax</div>
+                            <div class="sub-item" data-value="body-waxing-hands">Hands Wax</div>
+                            <div class="sub-item" data-value="body-waxing-feet">Feet Wax</div>
+                            <div class="sub-item" data-value="body-waxing-underarm">Underarm Wax</div>
+                            <div class="sub-item" data-value="body-waxing-forearm">Forearm Wax</div>
+                            <div class="sub-item" data-value="body-waxing-full-arms">Full Arms Wax</div>
+                            <div class="sub-item" data-value="body-waxing-stomach">Stomach Wax</div>
+                            <div class="sub-item" data-value="body-waxing-back">Back Wax</div>
+                            <div class="sub-item" data-value="body-waxing-half-leg-ankle-knee">Half Leg Wax Ankle to Knee</div>
+                            <div class="sub-item" data-value="body-waxing-half-leg-knee-thigh">Half Leg Knee to Upper Thigh</div>
+                            <div class="sub-item" data-value="body-waxing-full-leg">Full Leg Wax</div>
+                            <div class="sub-item" data-value="body-waxing-bikini">Bikini Wax</div>
+                            <div class="sub-item" data-value="body-waxing-brazilian">Brazilian Wax</div>
+                            <div class="sub-item" data-value="body-waxing-extended-bikini">Extended Bikini</div>
+                            <div class="sub-item" data-value="body-waxing-hollywood">Hollywood Wax</div>
+                            <div class="sub-item" data-value="body-waxing-hollywood-maintenance">Hollywood Maintenance</div>
+                            <div class="sub-item" data-value="body-waxing-chest">Chest Wax</div>
+                            <div class="sub-item" data-value="body-waxing-bums">Bums Wax</div>
+                            <div class="sub-item" data-value="body-waxing-full-body-ladies">Full Body Waxing Ladies</div>
+                            </div>
+                            <div class="main-category" data-category="makeup">Makeup <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="makeup">
+                            <div class="sub-item" data-value="makeup-eyes">Eyes Makeup</div>
+                            <div class="sub-item" data-value="makeup-eyes-strip-lashes">Eye Makeup with Strip Lashes</div>
+                            <div class="sub-item" data-value="makeup-touch-up">Touch up & Go</div>
+                            <div class="sub-item" data-value="makeup-party">Party Makeup</div>
+                            <div class="sub-item" data-value="makeup-daytime">Daytime Makeup</div>
+                            <div class="sub-item" data-value="makeup-evening">Evening Makeup</div>
+                            <div class="sub-item" data-value="makeup-bridal-trial">Bridal Makeup Trial</div>
+                            <div class="sub-item" data-value="makeup-bridal-engagement">Bridal/Engagement Makeup</div>
+                            <div class="sub-item" data-value="makeup-bridal-package">Bridal Package (Makeup, Hair, Jewellery & Dupatta Setting)</div>
+                            </div>
+                            <div class="main-category" data-category="makeup-add-ons">Makeup Add-ons <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="makeup-add-ons">
+                            <div class="sub-item" data-value="makeup-addons-strip-lashes">Strip Lashes</div>
+                            <div class="sub-item" data-value="makeup-addons-glossy-lips">Glossy Lips</div>
+                            <div class="sub-item" data-value="makeup-addons-glitter-eyes">Glitter Eyes</div>
+                            </div>
+                            <div class="main-category" data-category="facials">Facials <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="facials">
+                            <div class="sub-item" data-value="facials-cleansing-toner">Face Cleansing & Toner</div>
+                            <div class="sub-item" data-value="facials-exfoliation-toner">Face Exfoliation & Toner</div>
+                            <div class="sub-item" data-value="facials-polish-toner">Face Polish & Toner</div>
+                            <div class="sub-item" data-value="facials-mini">Mini Facial (Cleanse, Polish & Toner)</div>
+                            <div class="sub-item" data-value="facials-express">Express Facial (Cleanse, Exfoliate, Mask & Toner)</div>
+                            <div class="sub-item" data-value="facials-deluxe">Deluxe Facial (Cleanse, Polish, Exfoliate, Massage, Mask & Toner)</div>
+                            <div class="sub-item" data-value="facials-brightening-antiaging">Brightening / Anti-aging Facial</div>
+                            <div class="sub-item" data-value="facials-whitening-gold">Whitening / Gold Facial</div>
+                            <div class="sub-item" data-value="facials-diamond">Diamond Facial</div>
+                            <div class="sub-item" data-value="facials-double-mask">Add-on Double Mask</div>
+                            <div class="sub-item" data-value="facials-lip-mask">Add-on Lip Mask</div>
+                            <div class="sub-item" data-value="facials-eye-mask">Add-on Eye Mask</div>
+                            <div class="sub-item" data-value="facials-serum">Add-on Serum</div>
+                            <div class="sub-item" data-value="facials-heat-treatment">Add-on Heat Treatment</div>
+                            </div>
+                            <div class="main-category" data-category="eyelash-services">Eyelash Services <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="eyelash-services">
+                            <div class="sub-item" data-value="eyelash-russian-natural">Russian Natural Lashes</div>
+                            <div class="sub-item" data-value="eyelash-russian-natural-removal">Russian Natural Lashes Removal</div>
+                            <div class="sub-item" data-value="eyelash-russian-natural-infill">Russian Natural Lashes Infill</div>
+                            <div class="sub-item" data-value="eyelash-russian-glamour">Russian Glamour Lashes</div>
+                            <div class="sub-item" data-value="eyelash-russian-glamour-removal">Russian Glamour Lashes Removal</div>
+                            <div class="sub-item" data-value="eyelash-russian-glamour-infill">Russian Glamour Lashes Infill</div>
+                            <div class="sub-item" data-value="eyelash-individual-natural">Individual Natural Lashes</div>
+                            <div class="sub-item" data-value="eyelash-individual-natural-removal">Individual Natural Lashes Removal</div>
+                            <div class="sub-item" data-value="eyelash-individual-natural-infill">Individual Natural Lashes Infill</div>
+                            <div class="sub-item" data-value="eyelash-individual-glamour">Individual Glamour Lashes</div>
+                            <div class="sub-item" data-value="eyelash-individual-glamour-removal">Individual Glamour Lashes Removal</div>
+                            <div class="sub-item" data-value="eyelash-party">Party Lashes</div>
+                            <div class="sub-item" data-value="eyelash-party-removal">Party Lashes Removal</div>
+                            <div class="sub-item" data-value="eyelash-party-infill">Party Lashes Infill</div>
+                            <div class="sub-item" data-value="eyelash-strip">Strip Lashes</div>
+                            <div class="sub-item" data-value="eyelash-strip-application">Strip Lashes Application Only</div>
+                            <div class="sub-item" data-value="eyelash-lift">Lash Lift</div>
+                            <div class="sub-item" data-value="eyelash-lift-tint">Lash Lift & Tint</div>
+                            </div>
+                            <div class="main-category" data-category="brows-tinting">Brows & Tinting <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="brows-tinting">
+                            <div class="sub-item" data-value="brows-lamination">Brow Lamination</div>
+                            <div class="sub-item" data-value="brows-lamination-tint">Brow Lamination & Tint</div>
+                            <div class="sub-item" data-value="brows-hi-definition">Hi Definition Perfect Brows</div>
+                            <div class="sub-item" data-value="brows-henna">Henna Brows</div>
+                            <div class="sub-item" data-value="brows-eyebrow-tint">Eyebrow Tint</div>
+                            <div class="sub-item" data-value="brows-eyelash-tint">Eyelash Tint</div>
+                            </div>
+                            <div class="main-category" data-category="henna-tattoo">Henna Tattoo <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="henna-tattoo">
+                            <div class="sub-item" data-value="henna-hand">Henna Design (Hand)</div>
+                            <div class="sub-item" data-value="henna-foot">Henna Design (Foot)</div>
+                            <div class="sub-item" data-value="henna-legs">Henna Design (Legs)</div>
+                            <div class="sub-item" data-value="henna-bridal">Bridal Henna Package</div>
+                            </div>
+                            <div class="main-category" data-category="massage">Massage <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="massage">
+                            <div class="sub-item" data-value="massage-eyes">Eyes Massage</div>
+                            <div class="sub-item" data-value="massage-hands">Hands Massage</div>
+                            <div class="sub-item" data-value="massage-feet">Feet Massage</div>
+                            <div class="sub-item" data-value="massage-face">Face Massage</div>
+                            <div class="sub-item" data-value="massage-indian-head-15">Indian Head Massage (15 mins)</div>
+                            <div class="sub-item" data-value="massage-indian-head-30">Indian Head Massage (30 mins)</div>
+                            <div class="sub-item" data-value="massage-neck-shoulders">Neck & Shoulders Massage</div>
+                            <div class="sub-item" data-value="massage-arms-shoulders">Arms & Shoulders Massage</div>
+                            <div class="sub-item" data-value="massage-legs">Legs Massage</div>
+                            <div class="sub-item" data-value="massage-back-neck-shoulders">Back, Neck & Shoulders Massage</div>
+                            <div class="sub-item" data-value="massage-full-body">Full Body Massage</div>
+                            </div>
+                            <div class="main-category" data-category="hair-styling">Hair & Styling <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="hair-styling">
+                            <div class="sub-item" data-value="hair-trimming-straight-long">Trimming (Straight) Long Hair</div>
+                            <div class="sub-item" data-value="hair-trimming-u-v-long">Trimming (U or V Shape) Long Hair</div>
+                            <div class="sub-item" data-value="hair-bang">Hair Bang</div>
+                            <div class="sub-item" data-value="hair-blow-dry">Blow Dry</div>
+                            <div class="sub-item" data-value="hair-wash-condition">Wash & Condition</div>
+                            <div class="sub-item" data-value="hair-wash-blow-dry">Wash & Blow Dry</div>
+                            <div class="sub-item" data-value="hair-keratin-mask">Hair/Keratin Mask Treatment</div>
+                            <div class="sub-item" data-value="hair-straight-cut-restyle">Straight Cut / Restyle</div>
+                            <div class="sub-item" data-value="hair-layers-cut">Layers Cut</div>
+                            <div class="sub-item" data-value="hair-step-cut">Step Cut</div>
+                            <div class="sub-item" data-value="hair-shoulder-cut">Shoulder Cut</div>
+                            <div class="sub-item" data-value="hair-cut-blow-dry">Hair Cut & Blow Dry</div>
+                            <div class="sub-item" data-value="hair-straightening-short">Hair Straightening (Short Hair)</div>
+                            <div class="sub-item" data-value="hair-straightening-long">Hair Straightening (Long Hair)</div>
+                            <div class="sub-item" data-value="hair-curls-short">Hair Curls (Short Hair)</div>
+                            <div class="sub-item" data-value="hair-curls-long">Hair Curls (Long Hair)</div>
+                            <div class="sub-item" data-value="hair-up">Hair Up</div>
+                            <div class="sub-item" data-value="hair-curl-up">Hair Curl & Hair Up</div>
+                            <div class="sub-item" data-value="hair-color-grey-short">Color Application Only (Grey Coverage) Short Hair</div>
+                            <div class="sub-item" data-value="hair-color-grey-long">Color Application Only (Grey Coverage) Long Hair</div>
+                            </div>
+                            <div class="main-category" data-category="nails-polish-pamper">Nails Polish & Pamper <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="nails-polish-pamper">
+                            <div class="sub-item" data-value="nails-basic-manicure">Basic Manicure</div>
+                            <div class="sub-item" data-value="nails-basic-manicure-polish">Basic Manicure with Normal Polish</div>
+                            <div class="sub-item" data-value="nails-basic-pedicure">Basic Pedicure</div>
+                            <div class="sub-item" data-value="nails-basic-pedicure-polish">Basic Pedicure with Normal Polish</div>
+                            <div class="sub-item" data-value="nails-gel-manicure">Gel Manicure</div>
+                            <div class="sub-item" data-value="nails-gel-pedicure">Gel Pedicure</div>
+                            <div class="sub-item" data-value="nails-gel-manicure-pedicure">Gel Manicure & Pedicure</div>
+                            <div class="sub-item" data-value="nails-gel-manicure-galaxy">Gel Manicure with Galaxy Glow</div>
+                            <div class="sub-item" data-value="nails-gel-manicure-french">Gel Manicure with French Polish</div>
+                            <div class="sub-item" data-value="nails-gel-colour-feet-removal">Gel Colour Feet Removal</div>
+                            <div class="sub-item" data-value="nails-gel-colour-hands-removal">Gel Colour Hands Removal</div>
+                            <div class="sub-item" data-value="nails-luxury-manicure-basic">Luxury Manicure Basic</div>
+                            <div class="sub-item" data-value="nails-luxury-manicure-biab">Luxury Manicure with BIAB Polish</div>
+                            <div class="sub-item" data-value="nails-luxury-manicure-gel">Luxury Manicure with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-luxury-manicure-normal">Luxury Manicure with Normal Polish</div>
+                            <div class="sub-item" data-value="nails-luxury-pedicure-basic">Luxury Pedicure Basic</div>
+                            <div class="sub-item" data-value="nails-luxury-pedicure-gel">Luxury Pedicure with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-luxury-manicure-pedicure-gel">Luxury Manicure & Pedicure with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-japanese-manicure">Japanese Manicure (A Natural Manicure)</div>
+                            <div class="sub-item" data-value="nails-japanese-pedicure">Japanese Pedicure (A Natural Pedicure)</div>
+                            <div class="sub-item" data-value="nails-biab-manicure">BIAB Manicure</div>
+                            <div class="sub-item" data-value="nails-biab-manicure-galaxy">BIAB Manicure with Galaxy Glow</div>
+                            <div class="sub-item" data-value="nails-biab-manicure-french">BIAB Manicure with French</div>
+                            <div class="sub-item" data-value="nails-biab-manicure-gel">BIAB Manicure with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-biab-manicure-infills">BIAB Manicure Infills</div>
+                            <div class="sub-item" data-value="nails-biab-manicure-infills-french">BIAB Manicure Infills with French</div>
+                            <div class="sub-item" data-value="nails-biab-pedicure">BIAB Pedicure</div>
+                            <div class="sub-item" data-value="nails-biab-pedicure-infills">BIAB Pedicure Infills</div>
+                            <div class="sub-item" data-value="nails-biab-nail-repair">BIAB Nail Repair</div>
+                            <div class="sub-item" data-value="nails-biab-hands-removal">BIAB Hands Removal</div>
+                            <div class="sub-item" data-value="nails-biab-feet-removal">BIAB Feet Removal</div>
+                            <div class="sub-item" data-value="nails-callus-peel">Callus Peel</div>
+                            <div class="sub-item" data-value="nails-nail-art-per-finger">Nail Art Per Finger (Gel Polish)</div>
+                            <div class="sub-item" data-value="nails-normal-polish-removal">Normal Polish Removal</div>
+                            <div class="sub-item" data-value="nails-10-fingers-nail-art">10 Fingers Nail Art (Gel Polish)</div>
+                            </div>
+                            <div class="main-category" data-category="nails-extensions">Nails Extensions <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="nails-extensions">
+                            <div class="sub-item" data-value="nails-ext-biab">BIAB Nail Extensions</div>
+                            <div class="sub-item" data-value="nails-ext-biab-galaxy">BIAB Extension with Galaxy Glow</div>
+                            <div class="sub-item" data-value="nails-ext-biab-french">BIAB Extension with French</div>
+                            <div class="sub-item" data-value="nails-ext-biab-gel">BIAB Extension with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-ext-biab-removal">BIAB Extension Removal</div>
+                            <div class="sub-item" data-value="nails-ext-acrylic-natural">Acrylic Extension Natural</div>
+                            <div class="sub-item" data-value="nails-ext-acrylics-gel">Acrylics with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-ext-acrylics-french">Acrylics with Gel French</div>
+                            <div class="sub-item" data-value="nails-ext-acrylics-galaxy">Acrylics with Galaxy Glow</div>
+                            <div class="sub-item" data-value="nails-ext-acrylics-infills-natural">Acrylics Infills Natural</div>
+                            <div class="sub-item" data-value="nails-ext-acrylics-infills-gel">Acrylics Infills with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-ext-acrylic-removal">Acrylic Extension Removal</div>
+                            <div class="sub-item" data-value="nails-ext-acrylic-nail-repair">Acrylic Nail Repair</div>
+                            <div class="sub-item" data-value="nails-ext-acrylic-overlays-removal">Acrylic Overlays Removal</div>
+                            <div class="sub-item" data-value="nails-ext-acrylic-per-finger">Acrylic Nails Removal Per Finger</div>
+                            <div class="sub-item" data-value="nails-ext-gel-natural">Gel Extension Natural</div>
+                            <div class="sub-item" data-value="nails-ext-gel-gel-polish">Gel Extension with Gel Polish</div>
+                            <div class="sub-item" data-value="nails-ext-gel-galaxy">Gel Extension with Galaxy Glow</div>
+                            <div class="sub-item" data-value="nails-ext-gel-french">Gel Extension with French</div>
+                            <div class="sub-item" data-value="nails-ext-gel-infills">Gel Extension Infills</div>
+                            <div class="sub-item" data-value="nails-ext-gel-nail-repair">Gel Extension Nail Repair</div>
+                            <div class="sub-item" data-value="nails-ext-gel-removal">Gel Extension Removal</div>
+                            <div class="sub-item" data-value="nails-ext-gel-overlays-removal">Gel Overlays Removal</div>
+                            </div>
+                            <div class="main-category" data-category="child-treatments">Child Treatments <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="child-treatments">
+                            <div class="sub-item" data-value="child-brow-thread">Brow Thread (10-14 Years)</div>
+                            <div class="sub-item" data-value="child-middle-brow">Middle of Brow (10-15 Years)</div>
+                            <div class="sub-item" data-value="child-brow-wax">Brow Wax (12-14 Years)</div>
+                            <div class="sub-item" data-value="child-forearm-wax">Forearm Wax (12-16 Years)</div>
+                            <div class="sub-item" data-value="child-princess-package">Princess Package (3-7 Years)</div>
+                            <div class="sub-item" data-value="child-party-lashes">Party Lashes (12-16 Years)</div>
+                            <div class="sub-item" data-value="child-semi-perm-glamour">Semi Perm Glamour Lash (14-16 Years)</div>
+                            <div class="sub-item" data-value="child-semi-perm-natural">Semi Perm Natural Lash (14-16 Years)</div>
+                            <div class="sub-item" data-value="child-strip-lashes">Strip Lashes (10-16 Years)</div>
+                            <div class="sub-item" data-value="child-under-arm-wax">Under Arm Wax (12-16 Years)</div>
+                            <div class="sub-item" data-value="child-basic-manicure-3-7">Basic Manicure (3-7 Years)</div>
+                            <div class="sub-item" data-value="child-basic-manicure-8-15">Basic Manicure (8-15 Years)</div>
+                            <div class="sub-item" data-value="child-basic-pedicure-3-7">Basic Pedicure (3-7 Years)</div>
+                            <div class="sub-item" data-value="child-basic-pedicure-8-15">Basic Pedicure (8-15 Years)</div>
+                            <div class="sub-item" data-value="child-acrylic-ext-natural">Acrylic Extension Natural (10-15 Years)</div>
+                            <div class="sub-item" data-value="child-acrylic-ext-removal">Acrylic Extension Removal (10-15 Years)</div>
+                            <div class="sub-item" data-value="child-acrylic-nail-repair">Acrylic Nail Repair (10-15 Years)</div>
+                            <div class="sub-item" data-value="child-acrylics-infills-natural">Acrylics Infills Natural (10-15 Years)</div>
+                            </div>
+                            <div class="main-category" data-category="patch-tests">Patch Tests <i class="ph ph-caret-right"></i></div>
+                            <div class="sub-menu" data-subcategory="patch-tests">
+                            <div class="sub-item" data-value="patch-brow-lamination-tint">Consultation and Brow Lamination & Tint Patch Test</div>
+                            <div class="sub-item" data-value="patch-henna-brows">Consultation and Henna Brows Patch Test</div>
+                            <div class="sub-item" data-value="patch-hi-definition-brows">Consultation and Hi Definition Brows Patch Test</div>
+                            <div class="sub-item" data-value="patch-lash-extension">Consultation and Lash Extension Patch Test</div>
+                            <div class="sub-item" data-value="patch-lash-lift-tint">Consultation and Lash Lift & Tint Patch Test</div>
+                            <div class="sub-item" data-value="patch-lash-removal">Consultation and Lash Removal Patch Test</div>
+                            <div class="sub-item" data-value="patch-tint">Consultation and Tint Patch Test</div>
+                            <div class="sub-item" data-value="patch-wax-face-body">Consultation and Wax Patch Test Face & Body</div>
+                            </div>
+                        </div>
+                        <div class="selected-tags" id="selected-tags"></div>
+                        <input type="hidden" name="services[]" id="services-input" required />
+                        </div>
+                    </div>
   </div>
 
   <a href="#" class="primary-btn">Book Now</a>
@@ -725,96 +987,99 @@
       </div>
     </div>
   </div>
-  <div class="position-relative overflow-x-hidden mt-md-4 mt-lg-0">
-    <div class="footer-two-inner content">
-      <div class="row g-3 g-lg-0">
-        <div class="col-md-4 col-xl-3">
-          <div class="footer-card px-2 pe-xxl-5 fade_up_anim">
-            <a href="#">
-              <img src="assets/images/logo.png" class=" mb-4 w-75" alt="BestLook Logo" />
-            </a>
-            <p class="mb-4 pb-lg-3 text-n500">Best Look is your destination for modern style and premium hair and beauty services. Where beauty meets precision and passion.</p>
-            <ul class="social-link two">
-              <li><a href="https://www.facebook.com/share/1Es5kmJ42a/"><i class="ph ph-facebook-logo"></i></a></li>
-              <li><a href="https://www.instagram.com/bestlookbeautysalon?igsh=c3p1NjF4MHJmZ2tn"><i class="ph ph-instagram-logo"></i></a></li>
-              <li><a href="https://www.tiktok.com/@bestlookbeautysalon?_t=ZN-8xV0dtl8i3S&_r=1"><i class="ph ph-tiktok-logo"></i></a></li>
-              
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-8 col-xl-9">
-          <div class="navigate-part">
-            <div class="top pb-120 border-bottom-0">
-              
-            </div>
-            <div class="row g-3 g-lg-0 pb-80">
-              <div class="col-sm-6 col-xl-3 fade_up_anim">
-                <h4 class="mb-4 text-n500">Quick Links</h4>
-                <ul class="navigation-links">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="service.html">Services</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6 col-xl-3 fade_up_anim" data-delay=".2">
-                <h4 class="mb-4 text-n500">Contact</h4>
-                <ul class="contact-two mb-0">
-                  <li class="contact-item">
-                    <div class="contact-icon">
-                      <i class="ph ph-phone-call"></i>
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                      <a href="tel:07300505288">07300505288</a>
-                    </div>
-                  </li>
-                  <li class="contact-item">
-                    <div class="contact-icon">
-                      <i class="ph ph-envelope-open"></i>
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                      <a href="mailto:info@bestlooksalon.co.uk p-2">info@bestlooksalon.co.uk</a>
-                    </div>
-                  </li>
-                  <li class="contact-item">
-                    <div class="contact-icon">
-                      <i class="ph ph-map-pin"></i>
-                    </div>
-                    <div class="d-flex flex-column gap-1 p-2">
-                      <p>67 Strathmartine Road, Dundee, Scotland, UK</p>
-                      <p>DD3 7RX</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-12 col-xl-6 fade_up_anim" data-delay=".4">
-                <h4 class="mb-4 text-n500">Our Location</h4>
-                <div class="map-responsive" style="border-radius: 12px; overflow: hidden;">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.491195221457!2d-0.1285908!3d51.5072172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333c94407b%3A0xb33e3e6bb2e735ef!2sScotland!5e0!3m2!1sen!2suk!4v1717321187090!5m2!1sen!2suk" 
-                    width="100%" 
-                    height="220" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
+  
+   <div class=" mt-md-4 mt-lg-0 position-relative">
+            <div class="footer-two-inner content">
+            <div class="row g-3 g-lg-0">
+                <div class="col-md-4 col-xl-3">
+                <div class="footer-card px-2 pe-xxl-5 fade_up_anim">
+                    <a href="#">
+                    <img src="assets/images/logo.png" class=" mb-4 w-75" alt="BestLook Logo" />
+                    </a>
+                    <p class="mb-4 pb-lg-3 text-n500">Best Look is your destination for modern style and premium hair and beauty services. Where beauty meets precision and passion.</p>
+                    <ul class="social-link two">
+                    <li><a href="https://www.facebook.com/share/1Es5kmJ42a/"><i class="ph ph-facebook-logo"></i></a></li>
+                    <li><a href="https://www.instagram.com/bestlookbeautysalon?igsh=c3p1NjF4MHJmZ2tn"><i class="ph ph-instagram-logo"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@bestlookbeautysalon?_t=ZN-8xV0dtl8i3S&_r=1"><i class="ph ph-tiktok-logo"></i></a></li>
+                    
+                    </ul>
                 </div>
-              </div>
+                </div>
+                <div class="col-md-8 col-xl-9">
+                <div class="navigate-part">
+                    <div class="top pb-120 border-bottom-0">
+                    
+                    </div>
+                    <div class="row g-3 g-lg-0 pb-80">
+                    <div class="col-sm-6 col-xl-3 fade_up_anim">
+                        <h4 class="mb-4 text-n500">Quick Links</h4>
+                        <ul class="navigation-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 fade_up_anim" data-delay=".2">
+                        <h4 class="mb-4 text-n500">Contact</h4>
+                        <ul class="contact-two mb-0">
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                            <i class="ph ph-phone-call"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                            <a href="tel:07300505288">07300505288</a>
+                                  </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                            <i class="ph ph-envelope-open"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                     <a href="mailto:info@bestlooksalon.co.uk">info@bestlooksalon.co.uk</a>
+                      
+                    </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                            <i class="ph ph-map-pin"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-1 p-2">
+                      <p>67 Strathmartine Road, Dundee, Scotland, UK</p>
+                      <p>DD3 7RX</p> 
+                    </div>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-xl-6 fade_up_anim" data-delay=".4">
+                        <h4 class="mb-4 text-n500">Our Location</h4>
+                        <div class="map-responsive" style="border-radius: 12px; overflow: hidden;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.491195221457!2d-0.1285908!3d51.5072172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333c94407b%3A0xb33e3e6bb2e735ef!2sScotland!5e0!3m2!1sen!2suk!4v1717321187090!5m2!1sen!2suk" 
+                            width="100%" 
+                            height="220" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
+            <div class="copyright-two d-flex flex-wrap gap-3 align-items-center justify-content-between px-3">
+                <p>Copyright © <a href="#" class="text-secondary fw-semibold">BestLook</a> All rights reserved.</p>
+                <p class="mb-0">
+                Developed by 
+                <a href="https://calicutwebdesigners.com" class="text-decoration-underline text-secondary fw-medium" style="transition: all 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">calicutwebdesigners</a>
+                </p>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="copyright-two d-flex flex-wrap gap-3 align-items-center justify-content-between px-3">
-        <p>Copyright © <a href="#" class="text-secondary fw-semibold">BestLook</a> All rights reserved.</p>
-        <p class="mb-0">
-          Developed by 
-          <a href="https://calicutwebdesigners.com" class="text-decoration-underline text-secondary fw-medium" style="transition: all 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">calicutwebdesigners</a>
-        </p>
-      </div>
-    </div>
-  </div>
+  
     </footer>
 
     <!-- scripts -->
@@ -839,6 +1104,93 @@
     }, 2000); // Show after 2 seconds
   });
 </script>
+
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Custom JavaScript for Dropdown -->
+<script>
+$(document).ready(function() {
+  const $dropdownToggle = $('#services-toggle');
+  const $dropdownMenu = $('#services-menu');
+  const $subMenus = $('.sub-menu');
+  const $selectedTags = $('#selected-tags');
+  const $servicesInput = $('#services-input');
+  let selectedServices = [];
+
+  // Toggle main dropdown
+  $dropdownToggle.click(function(e) {
+    e.stopPropagation();
+    $dropdownMenu.toggle();
+    $subMenus.hide(); // Hide sub-menus when opening main dropdown
+  });
+
+  // Show sub-menu on main category click
+  $('.main-category').click(function(e) {
+    e.stopPropagation();
+    const category = $(this).data('category');
+    $subMenus.hide();
+    $(`.sub-menu[data-subcategory="${category}"]`).show();
+  });
+
+  // Handle subcategory selection
+  $('.sub-item').click(function(e) {
+    e.stopPropagation();
+    const value = $(this).data('value');
+    const text = $(this).text();
+
+    if (!selectedServices.includes(value)) {
+      selectedServices.push(value);
+      $selectedTags.append(`
+        <span class="selected-tag" data-value="${value}">
+          ${text} <i class="ph ph-x"></i>
+        </span>
+      `);
+      updateHiddenInput();
+    }
+  });
+
+  // Remove selected tag
+  $selectedTags.on('click', '.selected-tag .ph-x', function(e) {
+    e.stopPropagation();
+    const $tag = $(this).parent();
+    const value = $tag.data('value');
+    selectedServices = selectedServices.filter(s => s !== value);
+    $tag.remove();
+    updateHiddenInput();
+  });
+
+  // Update hidden input for form submission
+  function updateHiddenInput() {
+    $servicesInput.val(selectedServices.join(','));
+    $servicesInput.prop('required', selectedServices.length === 0);
+  }
+
+  // Close dropdown when clicking outside
+  $(document).click(function(e) {
+    if (!$(e.target).closest('.custom-dropdown').length) {
+      $dropdownMenu.hide();
+      $subMenus.hide();
+    }
+  });
+
+  // Prevent form submission if no services selected
+  $('#contact-form').submit(function(e) {
+    if (selectedServices.length === 0) {
+      e.preventDefault();
+      $dropdownToggle.addClass('error');
+      setTimeout(() => $dropdownToggle.removeClass('error'), 1000);
+    }
+  });
+});
+
+
+</script>
+
+
+
+
 
 <!-- Mirrored from pixner.net/html/salonix/dist/home-six.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jun 2025 06:49:47 GMT -->
 </html>
